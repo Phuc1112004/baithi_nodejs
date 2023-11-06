@@ -10,9 +10,9 @@
 </head>
 <body>
     <div class="conten">
-        <h1>List Products</h1>
-    <a class="add" href="/auth/add">
-        <button >Add Product</button>
+        <h1>Products</h1>
+    <a class="add" href="/auth/create">
+        <button >Create Product</button>
     </a>
     </div>
     
@@ -40,9 +40,8 @@
                              <td><%- product.quantity %></td>
                              <td><%- product.productStoreCode %></td>
 
-                            <td>
-                               
-                                <button class="btn btn-danger mx-2" onclick="">Delete</button>
+                             <td>
+                                <a href="/auth/product/delete/<%= product._id %>" class="btn btn-danger btn-sm">Delete</a>
                               </td>
                               
                         </tr>
